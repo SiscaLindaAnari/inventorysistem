@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TropiTravel - Biro Traveling Terbaik</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            color: #333;
+        }
+        header {
+            background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e') no-repeat center center/cover;
+            height: 600px;
+            position: relative;
+            color: white;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        header h1 {
+            font-size: 48px;
+            margin: 0;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        header p {
+            font-size: 24px;
+            margin: 10px 0 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        .booking-form {
+            background: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .booking-form input, .booking-form select, .booking-form button {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .booking-form button {
+            background-color: #ffcc00;
+            color: #333;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .booking-form button:hover {
+            background-color: #e6b800;
+        }
+        section {
+            padding: 50px 20px;
+            text-align: center;
+        }
+        .gallery {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .gallery img {
+            width: 200px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+        .gallery img:hover {
+            transform: scale(1.1);
+        }
+        .testimonials {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .testimonial-item {
+            margin-bottom: 20px;
+        }
+        .testimonial-item p {
+            font-style: italic;
+        }
+        .packages {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .package-card {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 250px;
+            text-align: center;
+        }
+        .package-card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 36px;
+            }
+            header p {
+                font-size: 18px;
+            }
+            .booking-form {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Selamat Datang di TropiTravel</h1>
+        <p>Temukan Liburan Impian Anda di Pantai Tropis yang Menawan</p>
+        <div class="booking-form">
+            <form>
+                <input type="text" placeholder="Tujuan Anda..." required>
+                <select>
+                    <option value="">Pilih Transportasi</option>
+                    <option value="pesawat">Pesawat</option>
+                    <option value="kereta">Kereta</option>
+                    <option value="kapal">Kapal</option>
+                </select>
+                <button type="submit">Cari Tiket Sekarang</button>
+            </form>
+        </div>
+    </header>
+
+    <!-- Galeri Hotel -->
+    <section>
+        <h2>Pilihan Hotel & Villa</h2>
+        <div class="gallery">
+            <img src="https://via.placeholder.com/200x150" alt="Hotel 1">
+            <img src="https://via.placeholder.com/200x150" alt="Hotel 2">
+            <img src="https://via.placeholder.com/200x150" alt="Hotel 3">
+            <img src="https://via.placeholder.com/200x150" alt="Hotel 4">
+        </div>
+    </section>
+
+    <!-- Testimoni -->
+    <section>
+        <h2>Apa Kata Pelanggan Kami</h2>
+        <div class="testimonials">
+            <div class="testimonial-item">
+                <p>"Liburan terbaik seumur hidup saya! Sangat direkomendasikan!"</p>
+                <strong>- John Doe</strong>
+            </div>
+            <div class="testimonial-item">
+                <p>"Pelayanan sangat profesional dan ramah."</p>
+                <strong>- Jane Smith</strong>
+            </div>
+        </div>
+    </section>
+
+    <!-- Paket Wisata Unggulan -->
+    <section>
+        <h2>Paket Wisata Unggulan</h2>
+        <div class="packages">
+            <div class="package-card">
+                <img src="https://via.placeholder.com/250x150" alt="Paket 1">
+                <h3>Paket Pantai Tropis</h3>
+                <p>Rp 2.500.000</p>
+                <button>Pesan Sekarang</button>
+            </div>
+            <div class="package-card">
+                <img src="https://via.placeholder.com/250x150" alt="Paket 2">
+                <h3>Paket Sunset Cruise</h3>
+                <p>Rp 3.000.000</p>
+                <button>Pesan Sekarang</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2023 TropiTravel. All rights reserved.</p>
+    </footer>
+</body>
+</html>

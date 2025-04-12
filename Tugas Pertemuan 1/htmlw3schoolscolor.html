@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplikasi Persediaan Barang</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f9f9f9; /* Latar belakang halaman */
+        }
+        h1 {
+            color: #fff;
+            background-color: #003366; /* Biru tua */
+            padding: 15px;
+            text-align: center;
+            border-radius: 5px;
+        }
+        form {
+            background-color: #e6f7ff; /* Biru muda sangat pucat */
+            padding: 20px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+            color: #003366; /* Biru tua */
+        }
+        input[type="text"], input[type="number"] {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            box-sizing: border-box;
+            border: 1px solid #003366; /* Biru tua */
+            border-radius: 3px;
+        }
+        input[type="submit"] {
+            background-color: #003366; /* Biru tua */
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+        input[type="submit"]:hover {
+            background-color: #66CCFF; /* Biru muda */
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background-color: #ffffff; /* Putih */
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th {
+            background-color: #003366; /* Biru tua */
+            color: white;
+            padding: 10px;
+            text-align: left;
+        }
+        td {
+            padding: 10px;
+            text-align: left;
+            color: #003366; /* Biru tua */
+        }
+        tr:nth-child(even) {
+            background-color: #f2f9ff; /* Biru muda sangat pucat */
+        }
+        p {
+            color: #003366; /* Biru tua */
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Aplikasi Persediaan Barang</h1>
+
+    <!-- Formulir Input Barang -->
+    <form action="#" method="post">
+        <label for="nama_barang">Nama Barang:</label>
+        <input type="text" id="nama_barang" name="nama_barang" placeholder="Masukkan nama barang" required>
+
+        <label for="jumlah">Jumlah:</label>
+        <input type="number" id="jumlah" name="jumlah" placeholder="Masukkan jumlah barang" required>
+
+        <label for="harga">Harga Satuan:</label>
+        <input type="number" id="harga" name="harga" placeholder="Masukkan harga satuan" required>
+
+        <input type="submit" value="Tambahkan ke Persediaan">
+    </form>
+
+    <!-- Tabel Persediaan Barang -->
+    <h2>Daftar Persediaan Barang</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>No.</th>
+                <th>Nama Barang</th>
+                <th>Jumlah</th>
+                <th>Harga Satuan</th>
+                <th>Total Harga</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Contoh Data Statik -->
+            <tr>
+                <td>1</td>
+                <td>Buku Tulis</td>
+                <td>50</td>
+                <td>Rp 5.000</td>
+                <td>Rp 250.000</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Pensil</td>
+                <td>100</td>
+                <td>Rp 2.000</td>
+                <td>Rp 200.000</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Penghapus</td>
+                <td>75</td>
+                <td>Rp 1.500</td>
+                <td>Rp 112.500</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <p><strong>Catatan:</strong> Aplikasi ini hanya menampilkan data statis karena tidak menggunakan JavaScript atau backend untuk memproses data.</p>
+
+</body>
+</html>

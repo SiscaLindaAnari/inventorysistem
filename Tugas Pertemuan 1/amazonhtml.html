@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Landing Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Arial&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background-color: #fff;
+            color: #111;
+        }
+        header {
+            background-color: #131921;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            color: white;
+        }
+        header img {
+            height: 30px;
+            margin-right: 15px;
+        }
+        .search-bar {
+            flex: 1;
+            margin: 0 20px;
+        }
+        .search-bar input {
+            width: 100%;
+            padding: 8px;
+            border-radius: 4px;
+            border: none;
+        }
+        nav {
+            background-color: #232f3e;
+            padding: 10px 20px;
+            color: white;
+            display: flex;
+            gap: 20px;
+        }
+        .hero {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: url('https://m.media-amazon.com/images/I/71H6U9+8zzL._SX3000_.jpg') no-repeat center center/cover;
+            height: 300px;
+            color: black;
+            text-align: left;
+            padding: 20px;
+        }
+        .hero h2 {
+            font-size: 2rem;
+            max-width: 400px;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 10px;
+        }
+        .categories {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            padding: 20px;
+        }
+        .category {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+        .category img {
+            width: 100%;
+            max-height: 150px;
+            object-fit: contain;
+        }
+        .sign-in {
+            background-color: #f3f3f3;
+            padding: 20px;
+            text-align: center;
+        }
+        .sign-in button {
+            padding: 10px 20px;
+            background-color: #ffd814;
+            border: 1px solid #fcd200;
+            cursor: pointer;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="Amazon logo">
+        <div>Deliver to <strong>Indonesia</strong></div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search Amazon">
+        </div>
+        <div>EN | Account & Lists | Returns & Orders | Cart</div>
+    </header>
+
+    <nav>
+        <div>All</div>
+        <div>Today's Deals</div>
+        <div>Customer Service</div>
+        <div>Gift Cards</div>
+        <div>Registry</div>
+        <div>Sell</div>
+    </nav>
+
+    <div class="hero">
+        <h2>Refresh your home with essentials under $50</h2>
+    </div>
+
+    <div class="categories">
+        <div class="category">
+            <h3>Health & Personal Care</h3>
+            <img src="https://m.media-amazon.com/images/I/51DO0su1wUL._AC_SX522_.jpg" alt="Health & Personal Care">
+        </div>
+        <div class="category">
+            <h3>Gaming accessories</h3>
+            <img src="https://m.media-amazon.com/images/I/81i2r+DwSELL._AC_SY355_.jpg" alt="Gaming accessories">
+        </div>
+        <div class="category">
+            <h3>Shop by Category</h3>
+            <img src="https://m.media-amazon.com/images/I/71q-0pklJ3L._AC_SX679_.jpg" alt="Shop by Category">
+        </div>
+        <div class="category">
+            <h3>Sign in for the best experience</h3>
+            <div class="sign-in">
+                <button>Sign in securely</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
